@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -28,12 +29,40 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 /* vp +header*/
 
 .vp-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+#topbar {
+    background: #3fbbc0;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 996;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+#topbar i {
+    padding-right: 6px;
+    line-height: 0;
+}
+
+.elem-topbar{
+    margin-right: 400px;
 }
 
 header {
@@ -46,9 +75,8 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
-
-    
-    
+    height: 50px;
+    position: fixed;
 }
 
 .vp-logo {
@@ -58,7 +86,7 @@ header {
     line-height: 1;
     font-weight: 600;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
+    
 }
 
 .vp-logo img{
@@ -82,11 +110,89 @@ color: #3fbbc0;;
 header a {
     color: #444444;
 }
-
-.hero {
-    flex: auto;
+header .vp-logo{
+    margin-right: 30px;
 }
 
 .active{
     color: #3fbbc0;;
 }
+
+
+/*slider*/
+
+.slider{
+    display: flex;
+    flex-flow: column wrap ;
+
+}
+    
+
+.slides img {
+    width: auto;
+    height: 700px
+    
+ 
+    }
+
+    /*feature*/
+
+    
+
+    .feature{
+    padding: 60px;
+    overflow: hidden;
+    }
+
+    .features {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    margin: 0.3px;
+    padding-bottom: 0.3px;
+    }
+    
+
+   
+.box{
+width: 350px;
+height: 150px;
+background: #ffffff;
+box-shadow: #fff;
+margin-left: 1.5rem;
+border: white  ;
+box-shadow: 1px 1px 1px 1px  #999;
+padding:  10px 25px 10px 25px; 
+}
+
+.box title a {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #111;
+}
+
+.box i {
+    font-size: 35px;
+    line-height: 1;
+    color: #3fbbc0;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.box  p{
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+.features :hover {
+    background: #3fbbc0;
+    
+}
+
+
+ 
+    
