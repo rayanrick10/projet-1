@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Open+Sans
     :ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <title>medico</title>
 </head>
 <body>
+
+    <!-- pre-header-->
+    
     
     <!--top bar-->
     
@@ -24,6 +31,7 @@
         <p>call us now +1 52623</p>
     </div>
     </div>
+    <!--fin top bar-->
       <!--header-->
         <header>
 
@@ -49,21 +57,62 @@
         </div>
         </nav>
         </header>
-        <!--sleder-->
+        <!--fin header-->
+
+<main>
+
+  <!-- Slides -->
+
         <section>
-        <div class="slider">
-            <div class="slides">
-            <div class="sldide"><img src="img/slide-1.jpg" alt=""></div>
-            <div class="slide"><img src="img/slide-2.jpg" alt=""></div>
-            <div class="slide"><img src="img/slide-3.jpg" alt=""></div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="cust_slider">
+                  <img src="img/slide-1.jpg" alt="">
+                  <div class="card_slider">
+                    <h2 class="card_title">Welcome to Medicio</h2>
+                    <p class="card_description">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                    <button type="button" class="card_button">Read More</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cust_slider">
+                  <img src="img/slide-2.jpg" alt="">
+                  <div class="card_slider">
+                    <h2 class="card_title">Lorem Ipsum Dolor</h2>
+                    <p class="card_description">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                    <button type="button" class="card_button">Read More</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cust_slider">
+                  <img src="img/slide-3.jpg" alt="">
+                  <div class="card_slider">
+                    <h2 class="card_title">Sequi ea ut et est quaerat</h2>
+                    <p class="card_description">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                    <button type="button" class="card_button">Read More</button>
+                  </div>
+                </div>
+              </div>
+              ...
             </div>
-        </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+          </div>
         </section>
-        <main>
-        <!--feature-->
+
         <section class="feature">
             <div class="features ">
-                
+              
                     <div class="box">
                         <i class="fa-solid fa-heart-pulse"></i>
                        <h4 class="title">
@@ -94,8 +143,199 @@
                     </div>
                 
             </div>
+            <!--fin Slides-->
+
+ <!--para-->
 
         </section>
-    </main>
+    <section class="para">
+        <div class="container-genrale">
+            <div class="text">
+                <h3>In an emergency? Need help now?</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a class="para-btn scrollto" href="#appointment">Make an Make an Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container-genrale">
+            <div class="about-titre">
+                <h2>About Us</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                     quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                      impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+            </div>
+           <div class="about-general">
+            <div class="about-general-img"> <img src="img/about.jpg" alt="">
+            </div>
+            <div class="aboute-genrale-text"><h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+            </p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+            </ul>
+            <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum
+           </div>
+          </div>
+        </div>
+    </section>
+<!--fin para-->
+
+
+    <!--count-->
+    <section class="count">
+      <div class="contenue">
+          <div class="cont-box"><i class="fas fa-user-md"></i>
+            <span data-purecounter-start="0" data-purecounter-end="85"
+             data-purecounter-duration="0" class="purecounter">85</span>
+             <p>
+              <strong>Doctors</strong>
+             consequuntur quae qui deca rode
+            </p>
+            <a href="#">Find out more »</a>
+        </div>
+        
+        
+          <div class="cont-box">
+            <i class="far fa-hospital"></i>
+            <span data-purecounter-start="0" data-purecounter-end="26" 
+            data-purecounter-duration="0" class="purecounter">26</span>
+            <p>
+              <strong>Departments</strong> adipisci atque cum quia aut numquam delectus
+            </p>
+            <a href="#">Find out more »</a>
+          </div>
+        
+        
+          <div class="cont-box">
+            <i class="fas fa-flask"></i>
+            <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="0"
+             class="purecounter">14</span>
+            <p>
+              <strong>Research Lab</strong> aut commodi quaerat. Aliquam ratione
+            </p>
+            <a href="#">Find out more »</a>
+          </div>
+        
+        
+            <div class="cont-box">
+              <i class="fas fa-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="0"
+               class="purecounter">150</span>
+              <p>
+                <strong>Awards</strong> rerum asperiores dolor molestiae doloribu
+              </p>
+              <a href="#">Find out more »</a>
+            </div>
+          
+        </div>
+      </div>
+
+    </section>
+ <!--fin count-->
+    
+    <!--futur-->
+
+  <section class="futur">
+    <div class="futures">
+      <div class="icon-box mt-5">
+        <i class="fa-solid fa-receipt"></i>
+        <h4>Est labore ad</h4>
+        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+      </div>
+      <div class="icon-box mt-5">
+        <i class="fa-solid fa-cube"></i>
+        <h4>Harum esse qui</h4>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+      </div>
+      <div class="icon-box mt-5">
+        <i class="fa-regular fa-images"></i>
+        <h4>Aut occaecati</h4>
+        <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+      </div>
+      <div class="icon-box mt-5">
+        <i class="fa-solid fa-shield"></i>
+        <h4>Beatae veritatis</h4>
+        <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+      </div>
+    </div>
+    <div class="images" ></div>
+  </section>
+<!--fin futur-->
+
+<!--servise-->
+
+<section class="service">
+  <div class="section-title">
+    <h2>Services</h2>
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+      Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. 
+      Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  </div>
+  <div class="services-containt">
+    <div class="services1">
+      <div class="icon">
+        <i class="fas fa-heartbeat"></i>
+      </div>
+      <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+      <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas 
+        molestias excepturi sint
+         occaecati cupiditate non provident
+        </p>
+    </div>
+    <div class="services2">
+      <div class="icon"><i class="fas fa-pills"></i></div>
+      <h4 class="title"><a href="">Dolor Sitema</a></h4>
+      <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+        ex ea commodo consequat tarad limino ata
+      </p>
+    </div>
+    <div class="services3">
+      <div class="icon"><i class="fas fa-hospital-user"></i></div>
+      <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+      <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+        eu fugiat nulla pariatur
+      </p>
+    </div>
+    <div class="services4">
+      <div class="icon"><i class="fas fa-dna"></i></div>
+      <h4 class="title"><a href="">Magni Dolores</a></h4>
+      <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+        deserunt mollit anim id est laborum
+      </p>
+    </div>
+    <div class="services5">
+      <div class="icon"><i class="fas fa-wheelchair"></i></div>
+      <h4 class="title"><a href="">Nemo Enim</a></h4>
+      <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+        blanditiis praesentium voluptatum deleniti atque
+      </p>
+    </div>
+    <div class="services6">
+      <div class="icon"><i class="fas fa-notes-medical"></i></div>
+      <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+      <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam 
+        libero tempore, cum soluta nobis est eligendi
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
