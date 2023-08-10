@@ -229,6 +229,49 @@ header .vp-logo{
     color: #3fbbc0;
 }
 
+.appointment-btn {
+  margin-left: 25px;
+  background: #3fbbc0;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+ 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #444444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover  {
+  background-color: #3fbbc0;
+}
+
+.dropbtn {
+  border: none;
+  background: white; 
+  cursor: pointer;
+
+}
 
 /*slider*/
 
@@ -238,12 +281,14 @@ header .vp-logo{
 /*section generale*/
 
 section {
-  padding: 60px 0;
+  padding: 60px 0px;
   overflow: hidden;
+
 }
 
 main{
-  margin: 20px;
+  
+  
 }
 
     /*feature*/
@@ -251,6 +296,7 @@ main{
     .feature{
     padding: 60px;
     overflow: hidden;
+    justify-content: center;
     }
 
     .features {
@@ -262,6 +308,19 @@ main{
     background: white;
     margin: 0.3px;
     padding-bottom: 0.3px;
+    animation-name: cool;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    }
+
+    @keyframes cool{
+      from{
+        opacity: 0;
+        transform: translatey(20px);
+      }
+      to {
+        opacity: 1;
+      }
     }
     
 
@@ -282,6 +341,7 @@ padding:  10px 25px 10px 25px;
     margin-bottom: 15px;
     font-size: 18px;
     color: #111;
+    
 }
 
 .box i {
@@ -296,11 +356,20 @@ padding:  10px 25px 10px 25px;
     font-size: 10px;
     line-height: 15px;
     margin-bottom: 0;
+    transition: all 0.3s ease-in-out;
 }
 .features :hover {
     background: #3fbbc0;
     color: #fff;
-    
+}
+
+.features :hover i  {
+  color: #fff; 
+}
+
+
+.features :hover a  {
+  color: #fff; 
 }
  /* para*/
 
@@ -319,8 +388,9 @@ padding:  10px 25px 10px 25px;
 
 .text {
     text-align: center;
+   
 }
- 
+
 
 
 .para-btn {
@@ -389,11 +459,14 @@ padding:  10px 25px 10px 25px;
       max-width: 100%;
       height: auto;
       padding: 12px;
+     
     }
+
 
     .about-general-text h3{
     font-weight: 600;
     font-size: 26px;
+    
     }
 
     .about-general-text ul li {
@@ -414,11 +487,11 @@ padding:  10px 25px 10px 25px;
 /*slider*/
 
 .swiper {
-    height: 400px !important;
+    height: 450px !important;
 }
 
 .cust_slider  img {
-    width: 100%;
+    width: 140%;
     height: 100%;
     object-fit: cover;
 }
@@ -513,7 +586,22 @@ padding:  10px 25px 10px 25px;
     align-items: center;
     margin: 0.3px;
     padding-bottom: 0.3px;
+    animation-name: cool;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes cool{
+  from{
+    opacity: 0;
+    transform: translatey(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 .count .cont-box  {
     box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
@@ -570,8 +658,21 @@ padding:  10px 25px 10px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
+
+
+@keyframes fadein {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 .icon-box {
     margin-top: 48px;
@@ -602,7 +703,19 @@ padding:  10px 25px 10px 25px;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: px;
+  animation-name: droit;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 
+  }
+
+  @keyframes droit {
+    from {
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   /*services*/
@@ -715,6 +828,20 @@ padding:  10px 25px 10px 25px;
 
   .appointment {
     background-color: #f7fcfc;
+    animation-name: cool;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+
+  @keyframes cool{
+    from{
+      opacity: 0;
+      transform: translatey(20px);
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .appointment .php-email-form {
