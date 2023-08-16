@@ -416,7 +416,7 @@ padding:  10px 25px 10px 25px;
 
     .about-titre{
     text-align: center;
-    padding-bottom:0;
+    padding-bottom:30px;
     }
 
     .about-titre h2{
@@ -446,19 +446,21 @@ padding:  10px 25px 10px 25px;
         display: flex;
         flex-flow: row nowrap ;
         align-items: center;
-        justify-content: space-between;
+        margin: 0.3px;
+        padding-bottom: 0.3px;
      }
 
     .about-general-img img{
     max-width: 100%;
     height: auto;
-    margin: 20px;
+
     }
 
     .about-general-text{
       max-width: 100%;
       height: auto;
       padding: 12px;
+      margin-left: 10px;
      
     }
 
@@ -480,9 +482,11 @@ padding:  10px 25px 10px 25px;
     .about-general-text p:last-child{
         margin-bottom: 0;
     }
-    .about-general i {
+    .about-general ul i{
+      font: size 20px;
+      padding-right:4px;
         color: #3fbbc0;
-    }
+    }  */
      
 /*slider*/
 
@@ -755,11 +759,15 @@ padding:  10px 25px 10px 25px;
     font-size: 18px;
     position: relative;
     padding-bottom: 15px;
+    
   }
 
   .section-title {
     text-align: center;
     padding-bottom: 30px;
+    animation-name: cool;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
  .section-title h2{
@@ -828,6 +836,7 @@ padding:  10px 25px 10px 25px;
 
   .appointment {
     background-color: #f7fcfc;
+  justify-content: center;
     animation-name: cool;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -932,10 +941,12 @@ padding:  10px 25px 10px 25px;
     color: #fff;
     transition: 0.4s;
     border-radius: 50px;
+  justify-content: center;
   }
   
   .appointment .php-email-form button[type=submit]:hover {
     background: #52c2c6;
+   
   }
 
   .row {
@@ -950,6 +961,10 @@ padding:  10px 25px 10px 25px;
     width: 260px;
     height: 100px;
     
+  }
+
+  .text-center {
+    text-align: center;
   }
 
 
@@ -1030,6 +1045,9 @@ padding:  10px 25px 10px 25px;
     .doctors .content-docteurs {
       display: flex;
       flex-flow: row;
+      animation-name: cool;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
     }
 
     .doctors .menbre {
@@ -1039,6 +1057,20 @@ padding:  10px 25px 10px 25px;
     border-radius: 4px;
     background: #fff;
     box-shadow: 0px 2px 15px rgba(63, 187, 192, 0.1);
+    animation-name: cool;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    }
+
+
+    @keyframes cool{
+      from{
+        opacity: 0;
+        transform: translatey(20px);
+      }
+      to {
+        opacity: 1;
+      }
     }
     
 
@@ -1064,6 +1096,7 @@ padding:  10px 25px 10px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: auto;
     }
 
     .doctors .membre .social-media a {
@@ -1108,6 +1141,101 @@ transition: all;
     color: #aaaaaa;
     }
 
+    /*testimonials*/
+    
+    .testimonials .testimonial-item{
+      box-sizing: content-box;
+      min-height: 320px;
+    }
+
+    .testimonials .testimonial-item .testimonial-img {
+      width: 90px;
+      border-radius: 50%;
+      margin: -40px 0 0 40px;
+      position: relative;
+      z-index: 2;
+      border: 6px solid #fff;
+    }
+    
+    .testimonials .testimonial-item h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px 45px;
+      color: #111;
+    }
+    
+    .testimonials .testimonial-item h4 {
+      font-size: 14px;
+      color: #999;
+      margin: 0 0 0 45px;
+    }
+    
+    .testimonials .testimonial-item .i
+    .testimonials .testimonial-item .i{
+      color: #b2e4e6;
+      font-size: 26px;
+    }
+    
+    .testimonials .testimonial-item .fa-solid i  {
+      display: inline-block;
+      left: -5px;
+      position: relative;
+    }
+    
+    .testimonials .testimonial-item .quote-icon-right {
+      display: inline-block;
+      right: -5px;
+      position: relative;
+      top: 10px;
+    }
+    
+    .testimonials .testimonial-item p {
+      font-style: italic;
+      margin: 0 15px 0 15px;
+      padding: 20px 20px 60px 20px;
+      background: #f0fafa;
+      position: relative;
+      border-radius: 6px;
+      position: relative;
+      z-index: 1;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide {
+      width: 60%;
+    }
+
+    .swiper-slide:nth-child(2n) {
+      width: 40%;
+    }
+
+    .swiper-slide:nth-child(3n) {
+      width: 20%;
+    }
+
+    
+    
+
+
 
     /*gallery*/
 
@@ -1120,7 +1248,7 @@ transition: all;
   margin: 0px 5px;
   border:solid #3fbbc0 3px ;
   padding: 3px;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-name: mesimgs;
   animation-iteration-count: infinite;
   }
@@ -1415,4 +1543,33 @@ footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
+}
+
+
+.back-to-top i {
+  font-size: 25px;
+  color: #fff;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 17px;
+  z-index: 996;
+  background: #3fbbc0;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
 }
