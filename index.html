@@ -120,42 +120,43 @@
 
 
         <section class="feature">
-            <div class="features ">
               
                     <div class="box">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                       <h4 class="title">
-                         <a href="">Lorem Ipsum</a></h4>
-                       <p>Voluptatum deleniti atque corrupti quos dolores
-                         et quas molestias excepturi</p>
+                      <div>                        
+                        <i class="fa-solid fa-pills"></i>
+                        <h4 class="title">
+                          <a href="">Sed ut perspiciatis</a></h4>
+                          <p> Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore</p></div>
+                            <div class="bg"></div> 
                     </div>
                     <div class="box">
+                      <div>
                         <i class="fa-solid fa-pills"></i>
                         <h4 class="title">
                             <a href="">Sed ut perspiciatis</a></h4>
                         <p> Duis aute irure dolor in reprehenderit in voluptate
-                         velit esse cillum dolore</p>
+                         velit esse cillum dolore</p></div>
+                          <div class="bg"></div>
                     </div>
                     <div class="box">
+                      <div>
                         <i class="fa-solid fa-thermometer"></i>
                         <h4 class="title">
                             <a href="">Magni Dolores</a></h4>
                        <p> Excepteur sint occaecat cupidatat non proident, sunt 
-                        in culpa qui officia</p>
+                        in culpa qui officia</p></div>
+                         <div class="bg"></div>
                     </div>
                     <div class="box">
+                      <div>
                         <i class="fa-solid fa-dna"></i>
                         <h4 class="title">
                             <a href="">Nemo Enim</a></h4>
                         <p> At vero eos et accusamus et iusto odio dignissimos 
-                        ducimus qui blanditiis</p>
-                    </div>
-                
-            </div>
-            <!--fin Slides-->
-
- <!--para-->
-
+                        ducimus qui blanditiis</p></div>
+                         <div class="bg"></div>
+                    </div> 
         </section>
     <section class="para">
         <div class="container-genrale">
@@ -260,12 +261,15 @@
 
   <section class="futur">
     <div class="futures">
-      <div class="icon-box mt-5">
+      <div class="icon-box mt-5 non">
         <i class="fa-solid fa-receipt"></i>
         <h4>Est labore ad</h4>
-        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi 
+          ut 
+
+        </p>
       </div>
-      <div class="icon-box mt-5">
+      <div class="icon-box mt-5 ">
         <i class="fa-solid fa-cube"></i>
         <h4>Harum esse qui</h4>
         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
@@ -352,31 +356,32 @@
     <h2>Make an Appointment</h2>
     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
   </div>
-  <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-    <div class="row">
-      <div class="col-md-4 form-group">
+  <form >
+    <div class="row-1">
+      
         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-      </div>
-      <div class="col-md-4 form-group mt-3 mt-md-0">
+      
+      
         <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-      </div>
-      <div class="col-md-4 form-group mt-3 mt-md-0">
+      
+    
         <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
-      </div>
+      
     </div>
-    <div class="row">
-      <div class="col-md-4 form-group mt-3">
+
+    <div class="row-2">
+      
         <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
-      </div>
-      <div class="col-md-4 form-group mt-3">
+    
+      
         <select name="department" id="department" class="form-select">
           <option value="">Select Department</option>
           <option value="Department 1">Department 1</option>
           <option value="Department 2">Department 2</option>
           <option value="Department 3">Department 3</option>
         </select>
-      </div>
-      <div class="col-md-4 form-group mt-3">
+    
+      
         <select name="doctor" id="doctor" class="form-select">
           <option value="">Select Doctor</option>
           <option value="Doctor 1">Doctor 1</option>
@@ -384,18 +389,16 @@
           <option value="Doctor 3">Doctor 3</option>
         </select>
       </div>
-    </div>
+    
 
-    <div class="form-group mt-3">
+    <div class="comment">
       <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+    
+    
+    <div><button type="submit">Make an Appointment</button></div>
     </div>
-    <div class="my-3">
-      <div class="loading">Loading</div>
-      <div class="error-message"></div>
-      <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-    </div>
-    <div class="text-center"><button type="submit">Make an Appointment</button></div>
   </form>
+
 
 </section>
 <!--fin appointment-->
