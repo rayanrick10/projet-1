@@ -17,7 +17,7 @@ body {
 
 p {
   margin-bottom: 0.8;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 100;
 }
 
@@ -268,19 +268,23 @@ main {}
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .box {
   display: flex;
   overflow: hidden;
     background-color:white;
-      height: 180px;
-      width: 210px;
+      height: 160px;
+      width: 200px;
       display: flex;
       flex-flow: column nowrap;
       box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
         transition: all 0.3s ease-in-out;
         border-radius: 8px;
+      margin-right: 13px;
+        
         
 }
 .box:hover .bg{
@@ -290,45 +294,58 @@ main {}
 .bg{
       background-color:#3fbbc0;
         height: 180px;
-        width: 210px;
+        width: 200px;
         position: relative;
         transform: translateY(180px);
         transition: all 0.5s ease;
 }
 .box>div:nth-child(1) {
   /* background: blue; */
-  width: 210px;
-  height: 180px;
+  width: 200px;
+  height: 170px;
   position: absolute;
   z-index: 5;
 }
 
 .box i {
-  margin-bottom: 15px;
-      font-size: 48px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+      font-size: 30px;
         line-height: 1;
         color: #3fbbc0;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease;
+        
       }
 
 
 .box .title{
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  margin-left: 20px;
+  font-size: 13px;
 }
 
 .box .title a{
   color : #111
 }
-.box .title p{
-  font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 0;
+.box .description{
+  font-size: 10px;
+    line-height: 18px;
+    margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
   }
+    .box:hover p {
+      color: white;
+    }
+        .box:hover a {
+          color: white;
+    }
+.box:hover i {
+  color: white;
 }
-
-
 
 /* para*/
 
@@ -408,14 +425,15 @@ main {}
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
   margin: 0.3px;
   padding-bottom: 10px;
   padding: 0 100px 40px 100px;
 }
 
 .about-general-img img {
-  width: 420px;
-  height: 340px;
+  width: 400px;
+  height: 320px;
 
 }
 
@@ -431,13 +449,13 @@ main {}
 
 .about-general-text h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 18px;
 
 }
 
 .about-general-text ul li {
   padding-bottom: 10px !important;
-  font-size: 14px;
+  font-size: 10px;
 
 }
 
@@ -828,7 +846,7 @@ main {}
 .appointment {
   background-color: #f7fcfc;
   justify-content: center;
-  padding: 0 100px 0 100px;
+  padding: 40px 100px 0 100px;
   animation-name: cool;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
@@ -846,11 +864,14 @@ main {}
   }
 }
 
+
+
+
 .row-1 ,.row-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom:  15px;
 
 }
 
@@ -858,7 +879,7 @@ main {}
 
 .row-1  input, .row-2 select, .row-2 input {
   height: 25px;
-  width: 30%;
+  width: 32%;
   margin:0 5px ;
   border: solid 0.2px #eeeded;
   font-size: 0.6rem;
@@ -878,7 +899,7 @@ main {}
 
 .comment textarea{
   height: 100px;
-  width: 92%;
+  width: 98%;
   margin-top: 5px;
   padding-top: 10px;
   border: solid 0.2px #eeeded;
@@ -974,11 +995,12 @@ main {}
 /*doctors*/
 
 .doctors{
-  padding: 50px 100px 50px 100px;
+  padding: 40px 100px 40px 100px;
 }
 
 .doctors {
   background-color: #f7fcfc;
+  
 }
 
 .doctors .content-docteurs {
@@ -987,6 +1009,7 @@ main {}
   animation-name: cool;
   animation-duration: 2s;
   animation-timing-function: ease-out;
+  padding-left:10px ;
 }
 
 .doctors .menbre {
@@ -1048,7 +1071,7 @@ main {}
   align-items: center;
   justify-content: center;
 }
-
+/*
 .doctors .membre .social-media a i {
   line-height: 0;
 }
@@ -1058,12 +1081,16 @@ main {}
   margin: 0 2px
 }
 
+.doctors .menbre .social-media:hover{
+  background: white;
+}
+
 .doctors .membre .social-media i:hover {
   color: #3fbbc0;
   background: none;
   transition: all;
 }
-
+*/
 
 .doctors .menbre .menbre-infos {
   padding: 25px 15px;
